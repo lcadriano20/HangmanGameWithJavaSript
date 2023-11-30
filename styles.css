@@ -13,6 +13,7 @@ body {
     padding: 0 10px;
 }
 .container {
+    position: relative;
     width: 900px;
     background: #fff;
     display: flex;
@@ -151,8 +152,8 @@ body {
 }
 .gamingDiv {
     position: absolute;
-    top:28%;
-    right: 30%;
+    top:2%;
+    right: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,18 +162,54 @@ body {
     width: 40px;
     height: 40px;
 }
-.gamingTimeStyle {
-    color: white;
+
+.gamingTime {
+    color: red;
     font-weight: bold;
+    font-size: 22px;
 }
 
 
-@media (max-width: 728px) {
+@media screen and (max-width: 728px) {
+    body {
+        width: 100%;
+    }
+    * {
+        padding: 0;
+        margin-top: 0;
+    }
 
+    body {
+    width: 100%;
+    }
+    .container {
+    width: 430px;
+    }
     .hangman-box img {
+        margin-top: 10px;
         max-width: 200px;
     }
-    .hangman h1 {
+    .hangman-box h1 {
         display: none;
+    }
+    .container {
+        position: relative;
+        width: px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gamingDiv {
+        position: absolute;
+        top: 0;
+       left: 45%;
+       margin-top: 10px;
+    }
+    .gamingDiv p {
+        font-size: 20px;
+    }
+    .gamingDiv {
+        height:50px;
+        width: 50px;
     }
 }
