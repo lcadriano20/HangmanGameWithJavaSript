@@ -42,7 +42,7 @@ progressiveCounter(function (currentCount) {
     
 })
 function timeIsOver(seconds) {
-    if(seconds>100000) {
+    if(seconds>20) {
         yourTimeIsOver()
     }
 }
@@ -170,8 +170,9 @@ function wrongWordGuessed(button) {
 
 function initGame(actualButton,clickedLetter) {
     if(currentWord.includes(clickedLetter)) {
+        actualButton.style.backgroundColor = 'green'
         disableClickedLetter(actualButton)
-       addLetterToTheBoard(clickedLetter)
+        addLetterToTheBoard(clickedLetter)
     } else {
         wrongWordGuessed(actualButton)
         
